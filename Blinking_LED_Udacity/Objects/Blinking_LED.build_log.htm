@@ -1,0 +1,144 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Youssef Youssef, Student, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+D:\Engineering\Last Summer as Student\Udacity\Project1_Blinking LED\Blinking_LED_Udacity\Blinking_LED.uvprojx
+Project File Date:  07/28/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(1): warning: In file included from...
+./LIBRARIES\Std_Types.h(16): warning: In file included from...
+./LIBRARIES/Platform_Types.h(63): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long    uint64;         /*       0..18446744073709551615  */
+                 ^
+./LIBRARIES/Platform_Types.h(64): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long      sint64;         /* -9223372036854775808 .. 9223372036854775807 */
+               ^
+main.c(5): warning: In file included from...
+./MCAL\Port.h(26): warning: In file included from...
+./MCAL/Port_Cfg.h(61): warning: no newline at end of file [-Wnewline-eof]
+#endif 
+       ^
+main.c(5): warning: In file included from...
+./MCAL\Port.h(30): warning: In file included from...
+./MCAL/Port_Regs.h(43): warning: no newline at end of file [-Wnewline-eof]
+#endif 
+       ^
+main.c(5): warning: In file included from...
+./MCAL\Port.h(74): warning: redefinition of typedef 'Port_PinType' is a C11 feature [-Wtypedef-redefinition]
+typedef uint8 Port_PinType;
+              ^
+./MCAL\Port.h(58): note: previous definition is here
+typedef uint8 Port_PinType;
+              ^
+main.c(6): warning: In file included from...
+./GPT.h(18): warning: In file included from...
+./GPT_Cfg.h(26): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(6): warning: In file included from...
+./GPT.h(19): warning: In file included from...
+./GPT__Regs.h(91): warning: 'SYSCTL_REGCGC2_REG' macro redefined [-Wmacro-redefined]
+#define SYSCTL_REGCGC2_REG        (*((volatile uint32 *)0x400FE608))
+        ^
+./LIBRARIES\tm4c123gh6pm_registers.h(138): note: previous definition is here
+#define SYSCTL_REGCGC2_REG        (*((volatile uint32 *)0x400FE108))
+        ^
+main.c(6): warning: In file included from...
+./GPT.h(19): warning: In file included from...
+./GPT__Regs.h(93): warning: no newline at end of file [-Wnewline-eof]
+#endif /* PORT_REGS_H */
+                        ^
+main.c(6): warning: In file included from...
+./GPT.h(102): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+        GPT_WIDE_TIMER_B_5_32_64_BIT            ,
+                                                ^
+./GPT.h(110): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+        GPT_MODE_SLEEP  ,
+                        ^
+./GPT.h(121): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+        GPT_PWM_TIMER_MODR                              ,
+                                                        ^
+./GPT.h(127): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+        GPT_EDGE_COUNT_TIMER_MODE       =0x13,
+                                             ^
+./GPT.h(135): warning: padding struct 'Gpt_ConfigChannel' with 3 bytes to align 'GptChannelTickValueMax' [-Wpadded]
+        Gpt_ValueType           GptChannelTickValueMax  ;
+                                ^
+./GPT.h(137): warning: padding struct 'Gpt_ConfigChannel' with 3 bytes to align 'GptNotifications' [-Wpadded]
+        void                                            (*GptNotifications)(void);
+                                                          ^
+main.c(7): warning: In file included from...
+./NVIC.h(17): warning: In file included from...
+./Nvic_Cfg.h(29): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(7): warning: In file included from...
+./NVIC.h(212): warning: no newline at end of file [-Wnewline-eof]
+#endif  /* NVIC_H */
+                    ^
+main.c(11): warning: // comments are not allowed in this language [-Wcomment]
+#define APPLICATION_LOGIC_CFG_ON_TIME                   10              //in seconds
+                                                                        ^
+main.c(83): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+  volatile unsigned long delay = 0;
+                         ^
+main.c(83): warning: variable 'delay' set but not used [-Wunused-but-set-variable]
+19 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=5530 RO-data=1034 RW-data=0 ZI-data=752  
+".\Objects\Blinking_LED.axf" - 0 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Youssef/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Youssef/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Source file:   Device/Source/system_TM4C123.c
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
